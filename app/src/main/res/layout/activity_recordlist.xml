@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordlistActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mdbstool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="MdbsRecording list"
+        app:titleTextColor="@color/crono"></androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recordRec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Chronometer
+                android:id="@+id/startTm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/crono"></Chronometer>
+
+            <SeekBar
+                android:id="@+id/bottomseek"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="2dp"
+                android:progressTint="@color/seekbarcolor"
+                android:thumbTint="@color/seekbar"></SeekBar>
+
+            <Chronometer
+                android:id="@+id/endTm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/crono"></Chronometer>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim_10"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginLeft="@dimen/dim_32"
+                android:background="@drawable/previous"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/playPause"
+                android:layout_width="@dimen/dim_30"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dim_40"
+                android:layout_marginRight="@dimen/dim_40"
+                android:background="@mipmap/ic_play"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnnext"
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="@dimen/dim_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:background="@drawable/next3"></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordlistActivity">
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/mdbstool"
+      android:background="@color/colorPrimaryDark"
+      app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+      app:title="MdbsRecording list"
+      app:titleTextColor="@color/crono"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+  </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/recordRec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/linlay"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Chronometer
+                android:layout_marginTop="15dp"
+                android:textColor="@color/crono"
+                android:id="@+id/startTm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                ></Chronometer>
+
+            <SeekBar
+                android:layout_weight="1"
+                android:id="@+id/bottomseek"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:thumbTint="@color/seekbarcolor"
+                android:progressTint="@color/seekbarcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></SeekBar>
+
+            <Chronometer
+                android:id="@+id/endTm"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/crono"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+                ></Chronometer>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/previous"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/playPause"
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="51dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="90dp"
+                android:background="@mipmap/ic_play"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btnnext"
+                android:layout_width="@dimen/dim_40"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/next3"></ImageButton>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

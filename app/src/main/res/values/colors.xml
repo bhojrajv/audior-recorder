@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c7a8ae</color>
+    <color name="colorPrimaryDark">#a5737d </color>
+    <color name="colorAccent">#a5737d </color>
+    <color name="seekbar">#ffffff</color>
+    <color name="seekbarcolor">#a5737d</color>
+    <color name="progressthumb">#ffffff</color>
+    <color name="crono">#000000</color>
+    <color name="background"> #b9929a</color>
+</resources>

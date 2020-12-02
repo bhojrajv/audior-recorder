@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+    <ImageView
+        android:layout_width="@dimen/dim_120"
+        android:layout_height="@dimen/dim_120"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mdbs"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim_10"
+        android:fontFamily="cursive"
+        android:text="My MDBS Sign UP"
+        android:textColor="@color/crono"
+        android:textSize="@dimen/dim_25"
+        android:textStyle="italic"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/seekbar"
+        app:boxStrokeWidth="2dp"
+        android:id="@+id/SingUPeamil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_40"
+        android:layout_marginRight="@dimen/dim_10"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="User Name/Enter your Email"
+      >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/email"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/email"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Setpassword"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/seekbar"
+        app:boxStrokeWidth="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_15"
+        android:layout_marginRight="@dimen/dim_10"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Set your password"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/password"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dim_20"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/signUbtn"
+            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_20"
+            android:layout_width="@dimen/dim_260"
+            android:layout_height="@dimen/dim_55"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dim_1"
+            android:background="@drawable/btnround"
+            android:text="Sign Up"
+            android:textColor="@color/progressthumb"
+            android:textSize="@dimen/dim_20"
+            android:textStyle="bold"></Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:layout_gravity="center"
+            android:textSize="@dimen/dim_20"
+            android:text="Sign IN"
+            android:textColor="@color/crono"
+            android:textStyle="normal"></TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

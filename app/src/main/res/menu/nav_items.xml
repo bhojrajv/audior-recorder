@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/Hm"
+    android:icon="@drawable/whitehome"
+    app:showAsAction="always"
+    android:enabled="true"
+    android:title="Home">
+</item>
+    <item android:id="@+id/testmonial"
+        android:icon="@drawable/whitetestmonial"
+        app:showAsAction="always"
+        android:iconTintMode="src_over"
+        android:enabled="true"
+        android:title="Testimonial">
+    </item>
+    <item android:id="@+id/about"
+        android:icon="@drawable/whiteabout"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="about us">
+    </item>
+    <item android:id="@+id/contact"
+        android:icon="@drawable/whitecontatc"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="contact us">
+    </item>
+    <item android:id="@+id/user"
+        android:icon="@drawable/whiteuser"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title=" Profile">
+    </item>
+</menu>
